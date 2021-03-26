@@ -14,4 +14,11 @@ I obtained my bachelor's degree in Computing Science from [the University of Gla
 
 Currently, my research interest lies in 3D computer vision, particularly implicit neural 3D scene representation - how to encode the complex geometry and texture of real world scenes into a neural network. 
 
-Note: this site is under construction.
+# News
+
+[11.2020] I joined ByteDance AI Lab as a research scientist. \\
+[10.2019] I presented our solution to the DeepFashion2 at ICCV, Seoul. \\
+[07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge. \\
+[06.2019] I moved to Singapore and joined ViSenze as a research software engineer!
+
+Note: this site is currently under construction.
