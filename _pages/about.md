@@ -21,10 +21,12 @@ Currently, my research interest lies in 3D computer vision, particularly implici
 [07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge. \\
 [06.2019] I moved to Singapore and joined ViSenze as a research software engineer!
 
-Note: this site is currently under construction.
-
 # Publications
 
 [NeMI: Unifying Neural Radiance Fields with Multiplane Images for Novel View Synthesis](coming_soon) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
 \[[project page](https://vincentfung13.github.io/projects/nemi)\] \[[pdf](coming_soon)\] \[[supp](coming_soon)\] \[[code](coming_soon)\]
+
+# Blog Posts
+
+[07.2017] [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035) 

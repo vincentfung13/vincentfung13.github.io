@@ -16,8 +16,8 @@ Education
 
 Work experience
 ======
-* 2020-11 - present: Research Scientist @ ByteDance, Singapore
+* 11.2020 - present: Research Scientist @ ByteDance, Singapore
 
-* 2019-06 - 2020-11: Research Software Engineer @ ViSenze, Singapore 
+* 06.2019 - 11.2020: Research Software Engineer @ ViSenze, Singapore 
 
-* 2016-06 - 2019-06: Senior Research Software Engineer @ Tuputech, Guangzhou, China 
+* 06.2016 - 06.2019: Senior Research Software Engineer @ Tuputech, Guangzhou, China 
