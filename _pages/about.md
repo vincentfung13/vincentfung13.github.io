@@ -10,7 +10,7 @@ redirect_from:
 
 I am a Research Scientist at [ByteDance AI Lab](https://ailab.bytedance.com/) in Singapore, where I work on computer vision.
 
-I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland in 2016. I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn). Prior to joining ByteDance, I was a research software engineer at [ViSenze](https://www.visenze.com/), where I worked on deep metric learning for large-scale image retrieval, I was part of the team that won the [DeepFashion2](https://sites.google.com/view/cvcreative/deepfashion2) clothes retrieval challenge in ICCV 2019. Before that, I was an algorithm team lead at [Tuputech](https://www.tuputech.com/home), where I worked on large-scale person re-identification and tracking.
+I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland in 2016. I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn). Prior to joining ByteDance, I was a research software engineer at [ViSenze](https://www.visenze.com/), where I worked on deep metric learning for large-scale image retrieval. Before that, I was an algorithm team lead at [Tuputech](https://www.tuputech.com/home), where I led a team to work on large-scale person re-identification and tracking under multiple cameras.
 
 Currently, my research interest lies in 3D computer vision, particularly implicit neural 3D scene representation - how to encode the complex geometry and texture of real world scenes into a neural network. 
 
@@ -25,7 +25,7 @@ Currently, my research interest lies in 3D computer vision, particularly implici
 
 [NeMI: Unifying Neural Radiance Fields with Multiplane Images for Novel View Synthesis](coming_soon) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
-\[[project page](https://vincentfung13.github.io/projects/nemi)\] \[[pdf](coming_soon)\] \[[supp](coming_soon)\] \[[code](coming_soon)\]
+\[[project page](projects/nemi)\] \[[pdf](coming_soon)\] \[[supp](coming_soon)\] \[[code](coming_soon)\]
 
 # Blog Posts
 

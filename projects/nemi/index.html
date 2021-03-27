@@ -367,8 +367,8 @@
                     <p class="text-justify">
                     We propose <strong>NeMI</strong>, an approach to perform novel view synthesis and depth estimation via dense 3D reconstruction from a single image. 
                     NeMI unifies <strong>Ne</strong>ural radiance fields (NeRF) with <strong>M</strong>ultiplane <strong>I</strong>mages (MPI). Specifically, NeMI is a general two-dimensional and image-conditioned extension of NeRF, and a continuous depth generalization of MPI. 
-                    Given a single image as input, our method predicts a 4-channel image (RGB and volume den-sity) at arbitrary depth values to jointly reconstruct the camera frustum and fill in occluded contents. 
-                    The reconstructedand inpainted frustum can then be easily rendered into any novel RGB or depth views using differentiable rendering.<br>
+                    Given a single image as input, our method predicts a 4-channel image (RGB and volume density) at arbitrary depth values to jointly reconstruct the camera frustum and fill in occluded contents. 
+                    The reconstructed and inpainted frustum can then be easily rendered into any novel RGB or depth views using differentiable rendering.<br>
                     </p>
 
                     <img src="img/overview.png" class="img-responsive">
@@ -386,7 +386,7 @@
                     With the reconstructed frustum of the source camera, rendering <strong>any</strong> novel view only requires an additional homography wrapping step.
                     Imagine a ray that starts from target camera origin and intersects the target image at any pixel coordinate.
                     This ray intersects with the predicted planes in the source camera's frustum, the RGB and volume density is then obtained with bilinear interpolation. 
-                    The novel view can then be rendered with classifical volume rendering, similar to <a href="https://www.matthewtancik.com/nerf">[Mildenhall et al. 2020]</a>.
+                    The novel view can then be rendered with volume rendering, similar to <a href="https://www.matthewtancik.com/nerf">[Mildenhall et al. 2020]</a>.
                     </p>
                 </div>
             </div>
