@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at [ByteDance AI Lab](https://ailab.bytedance.com/), where I work on computer vision.
+I am a Research Scientist at [ByteDance AI Lab](https://ailab.bytedance.com/) in Singapore, where I work on computer vision.
 
 I obtained my bachelor's degree in Computing Science from [the University of Glasgow](gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland in 2016. I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](www.sysu.edu.cn). Prior to joining ByteDance, I was a research software engineer at [ViSenze](https://www.visenze.com/), where I worked on deep metric learning for large-scale image retrieval, I was part of the team that won the [DeepFashion2](https://sites.google.com/view/cvcreative/deepfashion2) clothes retrieval challenge in ICCV 2019. Before that, I was an algorithm team lead at [Tuputech](https://www.tuputech.com/home), where I worked on large-scale person re-identification and tracking.
 
@@ -17,8 +17,14 @@ Currently, my research interest lies in 3D computer vision, particularly implici
 # News
 
 [11.2020] I joined ByteDance AI Lab as a research scientist. \\
-[10.2019] I presented our solution to the DeepFashion2 at ICCV, Seoul. \\
+[10.2019] I presented our solution to the DeepFashion2 challenge at ICCV, Seoul. \\
 [07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge. \\
 [06.2019] I moved to Singapore and joined ViSenze as a research software engineer!
 
 Note: this site is currently under construction.
+
+# Publications
+
+[NeMI: Unifying Neural Radiance Fields with Multiplane Images for Novel View Synthesis](coming_soon) \\
+Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
+\[[project page](https://vincentfung13.github.io/projects/nemi)\] \[[pdf](coming_soon)\] \[[supp](coming_soon)\] \[[code](coming_soon)\]
