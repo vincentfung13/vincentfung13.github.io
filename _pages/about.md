@@ -23,9 +23,9 @@ Currently, my research interest lies in 3D computer vision, particularly implici
 
 # Publications
 
-[NeMI: Unifying Neural Radiance Fields with Multiplane Images for Novel View Synthesis](coming_soon) \\
+[NeMI: Unifying Neural Radiance Fields with Multiplane Images for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
-\[[project page](projects/nemi)\] \[[pdf](coming_soon)\] \[[supp](coming_soon)\] \[[code](coming_soon)\]
+\[[project page](projects/nemi)\] \[[pdf](https://arxiv.org/pdf/2103.14910)\] \[[code](coming_soon)\]
 
 # Blog Posts
 
