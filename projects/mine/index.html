@@ -1,0 +1,430 @@
+<DOCTYPE html>
+
+    <title>MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis</title>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21408087-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-21408087-2');
+    </script>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <style>
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <body>
+        <div class="container">
+            <div class="row mb-2 mt-4" id="paper-title">
+                <h1 class="col-md-12 text-center">
+                    MINE 
+                </h1>
+                <h3 class="col-md-12 text-center">
+                    Towards Continuous Depth MPI with NeRF for Novel View Synthesis
+                </h3>
+                <h3 class="col-md-12 text-center">
+                    <small>ICCV 2021</small>
+                </h3>
+            </div>
+
+            <div class="row" id="authors">
+                <div class="mx-auto text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://www.jiaxinli.me">Jiaxin Li</a><sup>1*</sup>
+
+                        <li class="list-inline-item">
+                            <a href="https://vincentfung13.github.io">Zijian Feng</a><sup>1*</sup>
+
+                        <li class="list-inline-item">
+                            <a href="http://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=en">Qi She</a><sup>1</sup>
+
+                        <li class="list-inline-item">
+                            <a href="https://henghuiding.github.io">Henghui Ding</a><sup>1</sup>
+
+                        <li class="list-inline-item">
+                            <a href="http://scholar.google.com.sg/citations?user=DsVZkjAAAAAJ&hl=en">Changhu Wang</a><sup>1</sup>
+
+                        <li class="list-inline-item">
+                            <a href="https://www.comp.nus.edu.sg/~leegh">Gim Hee Lee</a><sup>2</sup>
+                    </ul>
+                    <p id="institution"><sup>1</sup>ByteDance <sup>2</sup>National University of Singapore</p>
+                    <p><sup>*</sup>Denotes equal contribution</p>
+                </div>
+            </div>
+
+            <div class="row mb-2" id="links">
+                <div class="mx-auto">
+                    <ul class="nav">
+                        <li class="nav-item text-center">
+                            <a href="https://arxiv.org/pdf/2103.14910.pdf" class="nav-link">
+                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z" />
+                                </svg><br>
+                                Paper
+                            </a>
+                        <li class="nav-item text-center">
+                            <a href="coming_soon" class="nav-link">
+                                <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                                </svg><br>
+                                Code
+                            </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-3" id="teaser-kitti">
+                <div class="col-md-12 mx-auto">
+                <div class="pb-4">
+                    <div class="row gif-label pb-1 no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">Single Image Input</div>
+                        <div class="col-1"></div>
+                        <div class="col-3">Synthesized RGB</div>
+                        <div class="col-3">Synthesized Disparity</div>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/365_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/365_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/365_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/843_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/843_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/843_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/1035_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/1035_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/1035_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/2_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/2_zoom-in_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/2_zoom-in_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/359_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/359_zoom-in_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/kitti/359_zoom-in_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+                </div>
+                </div>
+            </div>
+
+            <div class="row mb-3" id="teaser-nyu">
+                <div class="col-md-12 mx-auto">
+                <div class="pb-4">
+                    <div class="row gif-label pb-1 no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">Single Image Input</div>
+                        <div class="col-1"></div>
+                        <div class="col-3">Synthesized RGB</div>
+                        <div class="col-3">Synthesized Disparity</div>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/3_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/3_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/3_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/24_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/24_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/24_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/52_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/52_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/52_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+
+                    <div class="row no-gutters">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/123_rgb.png" class="img-responsive">
+                        </div>
+                        <div class="col-1 io-arrow">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                            </svg>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/123_swing_rgb.gif" class="img-responsive">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/teasers/nyu/123_swing_disp.gif" class="img-responsive">
+                        </div>
+                    </div> <!-- row -->
+                </div>
+                </div>
+            </div>
+
+            <div class="row mb-3", id="abstract">
+                <div class="col-md-12 mx-auto">
+                    <h4>Abstract and Method</h4>
+                    <p class="text-justify">
+                    We propose <strong>MINE</strong>, an approach to perform novel view synthesis and depth estimation via dense 3D reconstruction from a single image. 
+                    MINE is a continuous-depth generalization of <strong>M</strong>ultiplane <strong>I</strong>mages (MPI) by introducing the <strong>NE</strong>ural radiance fields.
+                    Given a single image as input, our method predicts a 4-channel image (RGB and volume density) at arbitrary depth values to jointly reconstruct the camera frustum and fill in occluded contents. 
+                    The reconstructed and inpainted frustum can then be easily rendered into any novel RGB or depth views using differentiable rendering.<br>
+                    </p>
+
+                    <img src="img/overview.png" class="img-responsive">
+
+                    <br><p class="text-justify">
+                    Our network is an encoder-decoder architecture that takes a single image and a list of continuous depth values as inputs and outputs the reconstructed source camera frustum. 
+                    MINE reconstructs the camera frustum <strong>per plane</strong>. 
+                    Our encoder is a fully convolutional network that takes a single image as input and outputs the feature maps.  
+                    The depth decoder takes this feature maps and a continuous depth value as inputs, and outputs an 4-channel image of RGB values and volume density. 
+                    </p>
+
+                    <img src="img/render.png" class="img-responsive">
+
+                    <p class="text-justify">
+                    With the reconstructed frustum of the source camera, rendering <strong>any</strong> novel view only requires an additional homography wrapping step.
+                    Imagine a ray that starts from target camera origin and intersects the target image at any pixel coordinate.
+                    This ray intersects with the predicted planes in the source camera's frustum, the RGB and volume density is then obtained with bilinear interpolation. 
+                    The novel view can then be rendered with volume rendering, similar to <a href="https://www.matthewtancik.com/nerf">[Mildenhall et al. 2020]</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                    <h4>Related Links</h4>
+                    <ul>
+                        <li>
+                            NeRF was proposed by <a href="https://www.matthewtancik.com/nerf">Mildenhall et al. (2020)</a>
+                        <li>
+                            Single-view novel view synthesis with Multiplane Images by <a href="https://single-view-mpi.github.io">Tucker et al. (2020)</a>
+                        <li>
+                            <a href="https://alexyu.net/pixelnerf">pixelNeRF</a> and <a href="https://arxiv.org/abs/2010.04595">GRF</a> which try to generalize NeRF to unseen scenes
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12 mx-auto">
+                <div class="form-group col-md-offset-1 row-md-offset-1">
+                    <h4 class="mb-3">Citation</h4>
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{mine2021,
+    title={MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis}, 
+    author={Jiaxin Li and Zijian Feng and Qi She and Henghui Ding and Changhu Wang and Gim Hee Lee}, 
+    year={2021}, 
+    booktitle={ICCV},
+}</textarea>
+                </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                    <h4>Acknowledgements</h4>
+                    <p class="text-justify">
+                        We thank Richard Tucker for helpful discussions. This website is inspired by the template of <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                    </p>
+                </div>
+            </div>
+        </div> <!-- container -->
+    </body>
