@@ -21,7 +21,7 @@ I am interested in 3D computer vision problems, including point cloud understand
 [07.2021] Our work **"MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis"** has been accepted to ICCV 2021. \\
 [11.2020] I joined ByteDance AI Lab as a research scientist. \\
 [10.2019] I presented our solution to the DeepFashion2 challenge at ICCV, Seoul. \\
-[07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge. \\
+[07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge.
 
 # Publications
 
