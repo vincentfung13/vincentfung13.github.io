@@ -10,7 +10,7 @@ redirect_from:
 
 I am a Research Scientist in computer vision at [ByteDance AI Lab](https://ailab.bytedance.com/) in Singapore.
 
-I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland in 2016. I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
+I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland, I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
 
 Prior to joining ByteDance, I was a research software engineer at [ViSenze](https://www.visenze.com/), where I worked on deep metric learning for large-scale image retrieval. Before that, I was an algorithm team lead at [Tuputech](https://www.tuputech.com/home), where I led a team to work on large-scale person re-identification and tracking under multiple cameras.
 
