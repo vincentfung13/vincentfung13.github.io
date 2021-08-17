@@ -19,13 +19,18 @@ I am interested in 3D computer vision problems, including point cloud understand
 # News
 
 [07.2021] Our work **"MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis"** has been accepted to ICCV 2021. \\
-[11.2020] I joined ByteDance AI Lab as a research scientist. \\
-[10.2019] I presented our solution to the DeepFashion2 challenge at ICCV, Seoul. \\
-[07.2019] Our team Hydra@ViSenze won the ICCV DeepFashion2 clothes retrieval challenge.
+[10.2019] I presented our winning solution to the DeepFashion2 challenge at ICCV in Seoul.
 
 # Publications
 
-[MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
+- [MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
 \[[project page](projects/mine)\] \[[paper](https://arxiv.org/pdf/2103.14910)\] \[[code](https://github.com/vincentfung13/MINE)\]
+
+
+# Challenges 
+
+- **1st place (Winner)** in DeepFashion2 Cloth Retrieval Challenge \\
+ICCV DeepFashion2 Workshop, 2019 \\
+Team Hydra@ViSenze
