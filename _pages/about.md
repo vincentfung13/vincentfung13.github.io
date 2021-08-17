@@ -18,8 +18,8 @@ I am interested in 3D computer vision problems, including point cloud understand
 
 # News
 
-[07.2021] Our work **"MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis"** has been accepted to ICCV 2021. \\
-[10.2019] I presented our winning solution to the DeepFashion2 challenge at ICCV in Seoul.
+- [07.2021] Our work **"MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis"** has been accepted to ICCV 2021.
+- [10.2019] I presented our winning solution to the DeepFashion2 cloth retrieval challenge at ICCV in Seoul.
 
 # Publications
 
