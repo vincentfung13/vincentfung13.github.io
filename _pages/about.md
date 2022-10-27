@@ -27,7 +27,7 @@ I am interested in 3D computer vision problems, including point cloud understand
 - [A Deep-Learning-based System for Indoor Active Cleaning](coming_soon) \\
 Yike Yun<sup>*</sup>, Linjie Hou<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Wei Jin, Yang Liu, Chongyang Wang, Ruonan He, Weitao Guo, Bo Han, Baoxing Qin, Jiaxin Li \\
 International Conference on Intelligent Robots and Systems (IROS), October 2022 \\
-\[[project page](projects/active_cleaning)\] \[[paper](https://arxiv.org/pdf/2103.14910)\] \[[code](coming_soon)\]
+\[[project page](https://gaussianopensource.github.io/projects/active_cleaning)\] \[[paper](https://gaussianopensource.github.io/projects/active_cleaning/files/IROS_2022_GS.pdf)\] \[[code](https://github.com/gaussianopensource/dl_active_cleaning)\]
 
 - [MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
