@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at [Gaussian Robotics](https://www.gaussianrobotics.com/) in Singapore. I am currently working on various topics on intelligent robotics, such as visual SLAM related deep learning algoirthms, multi-task learning and efficient deep learning model inference on hardware. 
+I am a Research Scientist at [Gaussian Robotics](https://www.gaussianrobotics.com/) in Singapore. I am currently working on various topics on intelligent robotics, such as visual SLAM related deep learning algoirthms, multi-task learning and efficient deep learning model inference on edge-devices. 
 
 I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland, I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
 
 Prior to joining Gaussian Robotics, I was a research scientist at [ByteDance AI Lab](https://ailab.bytedance.com/), where I worked on 3D computer vision problems and large-scale product retrieval from video sequences. I also spent time at [ViSenze](https://www.visenze.com/) and [Tuputech](https://www.tuputech.com/home), leading various computer vision projects. 
 
-I am interested in 3D computer vision problems, including point cloud understanding, novel view synthesis and depth estimation. My goal is to build algorithms that efficiently interact with our physical world.
+Currently, I am interested in 2D / 3D computer vision problems, specifically for perception for autonomous robotics. My goal is to build algorithms that efficiently interact with our physical world.
 
 # News
 
@@ -34,6 +34,10 @@ Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changh
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
 \[[project page](projects/mine)\] \[[paper](https://arxiv.org/pdf/2103.14910)\] \[[code](https://github.com/vincentfung13/MINE)\]
 
+# Academic Services
+
+- Conference reviewer: ECCV'22, ICRA'22, CVPR'23, ICCV'23
+- Journal reviwer: IJCV
 
 # Challenges 
 
