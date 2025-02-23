@@ -14,7 +14,7 @@ Prior to TikTok, I was a Research Scientist at [Gaussian Robotics](https://www.g
 
 I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland, I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
 
-I have a broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower the next generation moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
+I have broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower the next generation moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
 
 # News
 
