@@ -29,15 +29,15 @@ I have broad interests in AI. Currently, I am working on building strong LLMs an
 - [A Deep-Learning-based System for Indoor Active Cleaning](https://gaussianopensource.github.io/projects/active_cleaning/files/IROS_2022_GS.pdf) \\
 Yike Yun<sup>*</sup>, Linjie Hou<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Wei Jin, Yang Liu, Chongyang Wang, Ruonan He, Weitao Guo, Bo Han, Baoxing Qin, Jiaxin Li \\
 International Conference on Intelligent Robots and Systems (IROS), October 2022 \\
-\[[project page](https://gaussianopensource.github.io/projects/active_cleaning)\] \[[code](https://github.com/gaussianopensource/dl_active_cleaning)\]
+\[[project page](https://gaussianopensource.github.io/projects/active_cleaning)\] \[[code](https://github.com/gaussianopensource/dl_active_cleaning)\] (<sup>*</sup> equal contributions)
 
 - [MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
-\[[project page](projects/mine)\] \[[code](https://github.com/vincentfung13/MINE)\]
+\[[project page](projects/mine)\] \[[code](https://github.com/vincentfung13/MINE)\] (<sup>*</sup> equal contributions)
 
 - [MT-ORL: Multi-Task Occlusion Relationship Learning](https://openaccess.thecvf.com/content/ICCV2021/html/Feng_MT-ORL_Multi-Task_Occlusion_Relationship_Learning_ICCV_2021_paper.html) \\
-Panhe Feng, Qi She, Lei Zhu, Jiaxin Li, Lin ZHANG, <sup>Zijian Feng</sup>, Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming \\
+Panhe Feng, Qi She, Lei Zhu, Jiaxin Li, Lin ZHANG, **Zijian Feng**, Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming \\
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
 \[[code](https://github.com/fengpanhe/MT-ORL)\]
 
