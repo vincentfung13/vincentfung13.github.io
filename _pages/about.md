@@ -33,17 +33,17 @@ International Conference on Intelligent Robots and Systems (IROS), October 2022 
 
 - [MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/abs/2103.14910) \\
 Jiaxin Li<sup>*</sup>, **Zijian Feng**<sup>*</sup>, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee \\
-International Conferenceon on Computer Vision (ICCV), October 2021 \\
+International Conference on Computer Vision (ICCV), October 2021 \\
 \[[project page](projects/mine)\] \[[code](https://github.com/vincentfung13/MINE)\] (\* denotes equal contributions)
 
 - [MT-ORL: Multi-Task Occlusion Relationship Learning](https://openaccess.thecvf.com/content/ICCV2021/html/Feng_MT-ORL_Multi-Task_Occlusion_Relationship_Learning_ICCV_2021_paper.html) \\
 Panhe Feng, Qi She, Lei Zhu, Jiaxin Li, Lin ZHANG, **Zijian Feng**, Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming \\
-International Conferenceon on Computer Vision (ICCV), October 2021 \\
+International Conference on Computer Vision (ICCV), October 2021 \\
 \[[code](https://github.com/fengpanhe/MT-ORL)\]
 
 - [Interaction via bi-directional graph of semantic region affinity for scene parsing](http://openaccess.thecvf.com/content/ICCV2021/papers/Ding_Interaction_via_Bi-Directional_Graph_of_Semantic_Region_Affinity_for_Scene_ICCV_2021_paper.pdf) \\
 Henghui Ding, Hui Zhang, Jun Liu, Jiaxin Li, **Zijian Feng**, Xudong Jiang \\
-International Conferenceon on Computer Vision (ICCV), October 2021 \\
+International Conference on Computer Vision (ICCV), October 2021
 
 # Challenges 
 
