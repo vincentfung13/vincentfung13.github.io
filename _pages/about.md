@@ -16,7 +16,7 @@ I obtained my bachelor's degree in Computing Science from [the University of Gla
 
 I have broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower TikTok's moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
 
-<strong style="color: red;">[Hiring]</strong> I am actively hiring talented research scientists/engineers in <strong>Singapore</strong>, <strong>San Jose</strong> and <strong>mainland of China</strong> to work on the next generation moderation system. 
+<strong style="color: red;">[Hiring]</strong> I am actively hiring talented research scientists/engineers in <strong>Singapore</strong>, <strong>San Jose</strong> and <strong>mainland of China</strong> to work on the next generation moderation system. Please feel free to reach out if you are interested in working on impactful projects and challenging problems!
 
 # News
 
