@@ -45,13 +45,13 @@ International Conferenceon on Computer Vision (ICCV), October 2021 \\
 Henghui Ding, Hui Zhang, Jun Liu, Jiaxin Li, **Zijian Feng**, Xudong Jiang \\
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
 
-# Academic Services
-
-- Conference reviewer: ECCV'22, ICRA'22, CVPR'23, ICCV'23
-- Journal reviwer: IJCV
-
 # Challenges 
 
 - **1st place (Winner)** in DeepFashion2 Cloth Retrieval Challenge \\
 ICCV DeepFashion2 Workshop, 2019 \\
 Team Hydra@ViSenze
+
+# Academic Services
+
+- Conference reviewer: ECCV'22, ICRA'22, CVPR'23, ICCV'23
+- Journal reviwer: IJCV
