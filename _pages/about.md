@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at [Gaussian Robotics](https://www.gaussianrobotics.com/) in Singapore. I am currently working on various topics on intelligent robotics, such as visual SLAM related deep learning algoirthms, multi-task learning and efficient deep learning model inference on edge-devices. 
+I am leading the Ecosystem and User Experience algorithm team at [TikTok](https://www.tiktok.com/) Business Integrity, where we build strong capabilities to detect risks and user experience issues on TikTok's monetization ecosystem. We strive for making TikTok safe and gain user trust, enabling sustainable business growth.
+
+Prior to TikTok, I was a Research Scientist at [Gaussian Robotics](https://www.gaussianrobotics.com/), where worked on various topics on intelligent robotics, such as visual SLAM related deep learning algoirthms, multi-task learning and efficient deep learning model inference on edge-devices. I also spent time at ViSenze and Tuputech, leading various computer vision projects.
 
 I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland, I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
 
-Prior to joining Gaussian Robotics, I was a research scientist at [ByteDance AI Lab](https://ailab.bytedance.com/), where I worked on 3D computer vision problems and large-scale product retrieval from video sequences. I also spent time at [ViSenze](https://www.visenze.com/) and [Tuputech](https://www.tuputech.com/home), leading various computer vision projects. 
-
-Currently, I am interested in 2D / 3D computer vision problems, specifically for perception for autonomous robotics. My goal is to build algorithms that efficiently interact with our physical world.
+I have a broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower the next generation moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
 
 # News
 
