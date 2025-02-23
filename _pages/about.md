@@ -41,6 +41,10 @@ Panhe Feng, Qi She, Lei Zhu, Jiaxin Li, Lin ZHANG, **Zijian Feng**, Changhu Wang
 International Conferenceon on Computer Vision (ICCV), October 2021 \\
 \[[code](https://github.com/fengpanhe/MT-ORL)\]
 
+- [Interaction via bi-directional graph of semantic region affinity for scene parsing](http://openaccess.thecvf.com/content/ICCV2021/papers/Ding_Interaction_via_Bi-Directional_Graph_of_Semantic_Region_Affinity_for_Scene_ICCV_2021_paper.pdf) \\
+Henghui Ding, Hui Zhang, Jun Liu, Jiaxin Li, **Zijian Feng**, Xudong Jiang \\
+International Conferenceon on Computer Vision (ICCV), October 2021 \\
+
 # Academic Services
 
 - Conference reviewer: ECCV'22, ICRA'22, CVPR'23, ICCV'23
