@@ -8,13 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am leading the Ecosystem and User Experience algorithm team at [TikTok](https://www.tiktok.com/) Business Integrity, where we build strong capabilities to detect risks and user experience issues on TikTok's monetization ecosystem. We strive for making TikTok safe and gain user trust, enabling sustainable business growth.
+I am leading the Ecosystem and User Experience algorithm team at [TikTok](https://www.tiktok.com/) Business Integrity, where we build strong capabilities to detect risks and user experience issues on TikTok's monetization ecosystem. We strive for making TikTok safe to gain user trust, enabling sustainable business growth.
 
 Prior to TikTok, I was a Research Scientist at [Gaussian Robotics](https://www.gaussianrobotics.com/), where worked on various topics on intelligent robotics, such as visual SLAM related deep learning algoirthms, multi-task learning and efficient deep learning model inference on edge-devices. I also spent time at ViSenze and Tuputech, leading various computer vision projects.
 
 I obtained my bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016, after spending 3 wonderful years in Scotland, I also obtained a bachelor's degree in Eletronics Engineering from [Sun Yat-Sen University](https://www.sysu.edu.cn) in the same year. 
 
-I have broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower the next generation moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
+I have broad interests in AI. Currently, I am working on building strong LLMs and MLLMs to empower TikTok's moderation system via both pre-training and post-training. I am also interested in 3D computer vision problems and building systems/algorithms for autonomous robotics that efficiently interact with our physical world.
+
+<strong style="color: red;">[Hiring]</strong> I am actively hiring talented research scientists/engineers in <strong>Singapore</strong>, <strong>San Jose</strong> and <strong>mainland of China</strong> to work on the next generation moderation system. 
 
 # News
 
