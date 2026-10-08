@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/cv_zijian_feng.pdf # path to your CV PDF file
+email: vincent.fung13@gmail.com # your email address
+scholar_userid: gnt-jJoAAAAJ # your Google Scholar ID
+github_username: vincentfung13 # your GitHub user name
+linkedin_username: zijian-vincent-feng-76099870 # your LinkedIn user name
+x_username: vincentfung13 # your X handle
+# rss_icon: true # uncomment to show the RSS icon

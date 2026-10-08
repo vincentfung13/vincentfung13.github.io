@@ -1,0 +1,36 @@
+# Photos shown on /photography/. Newest first.
+# Prepare files with `bin/prepare-photos <dir>` (resizes and strips GPS), then add an entry here.
+# category must be one of the keys in `categories`.
+categories:
+  birds: Birds
+  wildlife: Wildlife & nature
+
+photos:
+  - file: dsc_0938.jpg
+    category: birds
+    title: Asian Openbill
+    species: Anastomus oscitans
+    location: Punggol Park, Singapore
+    date: 2026-10-04
+    settings: Nikon Z6III · 600mm · f/8 · 1/250s · ISO 220
+  - file: dsc_0879.jpg
+    category: birds
+    title: Tiger Shrike
+    species: Lanius tigrinus
+    location: Punggol Park, Singapore
+    date: 2026-10-04
+    settings: Nikon Z6III · 600mm · f/8 · 1/250s · ISO 360
+  - file: dsc_0854.jpg
+    category: birds
+    title: White-breasted Waterhen
+    species: Amaurornis phoenicurus
+    location: Punggol Park, Singapore
+    date: 2026-10-04
+    settings: Nikon Z6III · 520mm · f/6.3 · 1/250s · ISO 1250
+  - file: dsc_0780.jpg
+    category: wildlife
+    title: Malayan Water Monitor
+    species: Varanus salvator
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-09-05
+    settings: Nikon Z6III · 120mm · f/4 · 1/125s · ISO 450
