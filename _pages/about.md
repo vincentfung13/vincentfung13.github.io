@@ -31,7 +31,7 @@ Before this role, I was a Staff Research Engineer at [Gaussian Robotics](https:/
 
 I received a bachelor's degree in Computing Science from [the University of Glasgow](https://gla.ac.uk) in 2016.
 
-These days I care most about how large models are trained: making pre-training and post-training fast, correct and explainable at scale. In my spare time I am building [**mew**](/projects/mew/), an LLM training stack written from scratch, and [blogging](/blog/) what I learn along the way.
+These days I care most about how large models are trained: making pre-training and post-training fast, correct and explainable at scale. In my spare time I am building [**mew**](/projects/mew/) (by hands), an LLM training stack written from scratch, and [blogging](/blog/) what I learn along the way.
 
 ## Featured Projects
 
