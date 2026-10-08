@@ -1,0 +1,114 @@
+cv:
+  name: Zijian Feng
+  label: Staff Applied Scientist, TikTok Business Integrity
+  email: vincent.fung13@gmail.com
+  location: Singapore
+  website: https://vincentfung13.github.io
+
+  social_networks:
+    - network: GitHub
+      username: vincentfung13
+    - network: LinkedIn
+      username: zijian-vincent-feng-76099870
+
+  sections:
+    Research Interests:
+      - bullet: "**LLM/VLM post-training, application and evaluation:** synthetic data, agentic RL, evaluation of content-understanding LLMs/VLMs and agents"
+      - bullet: "**Computer vision and robotics:** 3D computer vision (scene understanding, novel view synthesis, depth estimation), large-scale image retrieval, object recognition (detection and segmentation), multi-task learning, deep model compression and quantization"
+      - bullet: "**ML infra and tools:** PyTorch, Triton"
+
+    Experience:
+      - company: TikTok Pte. Ltd.
+        position: Staff Applied Scientist, Business Integrity
+        location: Singapore
+        start_date: 2023-11
+        end_date: present
+        summary: I lead a team of 7 full-time scientists and engineers building the AI foundation for TikTok Business Integrity, with a focus on large-scale foundation model data, moderation intelligence, and agentic system evaluation.
+        highlights:
+          - "**Agentic ads moderation system.** Built an agentic content moderation system from scratch, end to end: problem definition, data curation, agentic SFT, agentic RL and serving. Adaptive feature selection through tool calls improves recognition performance and adapts quickly to policy changes, at a throughput of more than 2 QPS per NVIDIA H20."
+          - "**Large-scale synthetic data for foundation models.** Built a fine-grained integrity knowledge graph of more than 300 entities and an online multimodal synthetic-data pipeline that grounds real-world videos to granular risk concepts and generates aligned QA, captions, spatial grounding and agentic moderation tasks. The pipeline generates more than 2B tokens a day and continuously improves our in-house foundation model."
+          - "**Agentic system evaluation.** Built large-scale evaluation infrastructure and benchmark datasets for internal risk-operation agents, with automatic multi-round conversations against a user simulator, sandboxed trajectory rollouts with more than 20 internal skills, and evaluation of long-horizon tasks and memory."
+      - company: Gaussian Robotics
+        position: Staff Research Engineer
+        location: Singapore
+        start_date: 2021-11
+        end_date: 2023-11
+        summary: Built the technical foundation from scratch for machine learning model training, evaluation and deployment on low-compute robotics systems.
+        highlights:
+          - "**Large-scale multi-task learning.** Ran a dozen deep-learning recognition tasks on 2-TOPS edge devices and set up MLOps for fast model iteration."
+          - "**Model development toolkit.** Infrastructure for self-supervised pretraining, supervised training, INT8 quantization (PTQ and QAT) and runtime conversion."
+          - "**End-to-end testing system.** A hardware-in-the-loop (HIL) testing framework with a web interface for pre-release checks."
+          - "**Foundation model research.** A semi-automatic annotation system based on the Segment Anything Model (SAM), with fine-tuning techniques for in-house data."
+      - company: TikTok Pte. Ltd.
+        position: Senior Research Scientist, AI Lab
+        location: Singapore
+        start_date: 2020-11
+        end_date: 2021-11
+        summary: Research on novel view synthesis and large-scale visual search.
+        highlights:
+          - "**Novel view synthesis.** Co-developed [MINE](/projects/mine/), dense 3D reconstruction from a single image with NeRF and multiplane images, published at ICCV 2021."
+          - "**Visual search for TikTok e-commerce.** Built the visual search embedding model for large-scale product retrieval from TikTok videos and co-designed the search pipeline and re-ranking."
+      - company: ViSenze Pte. Ltd.
+        position: Senior Research Engineer
+        location: Singapore
+        start_date: 2019-06
+        end_date: 2020-06
+        summary: Large-scale visual search for e-commerce.
+        highlights:
+          - "**ICCV 2019 DeepFashion2 clothes retrieval challenge.** Built the retrieval model and re-ranking pipeline that won 1st place."
+          - "**Image retrieval.** Trained most of the company's online retrieval models and built the team's training codebase; moved all online models to efficient architectures (MobileNet, ShuffleNet) with no accuracy drop; developed multi-task embedding training for category relevance."
+          - "**Large-scale distributed training.** Combined data and model parallelism to train arc-softmax embeddings over millions of classes."
+      - company: Tuputech
+        position: Lead Research Engineer
+        location: Guangzhou, China
+        start_date: 2016-06
+        end_date: 2019-06
+        summary: Led a team of 5 research engineers on large-scale pedestrian recognition (Re-ID) and tracking.
+        highlights:
+          - "**Person re-identification and tracking.** Built a system for pedestrian recognition and tracking across multiple cameras, with a data-driven Re-ID development workflow."
+          - "**Image classification.** Built and maintained a TensorFlow training platform that let solution engineers train and evaluate classifiers in a few clicks."
+
+    Education:
+      - institution: University of Glasgow
+        location: Glasgow, UK
+        area: Computing Science
+        studyType: B.Sc. (Honours)
+        start_date: 2013
+        end_date: 2016
+
+    Publications:
+      - title: "Pistis Technical Report"
+        authors:
+          - Heyun Chen, Xiaohan Lan, Jiaxi Li, Zhilin Lu, Qi She, Weiwen Xu, Fei Yu, Yujie Zhong, Jinghuan Chen, **Zijian Feng**, et al.
+        publisher: arXiv:2609.28554
+        releaseDate: 2026-09
+        url: https://arxiv.org/abs/2609.28554
+      - title: "TextSculptor: Training and Benchmarking Scene Text Editing"
+        authors:
+          - Yiheng Lin, Siyu Jiao, Xiaohan Lan, Wei Zhou, Qi She, Fei Yu, Heyun Chen, Zhengwei Wang, Jinghuan Chen, Moran Li, Yingchen Yu, **Zijian Feng**, Yao Zhao, Yunchao Wei, Yujie Zhong
+        publisher: arXiv:2605.21090
+        releaseDate: 2026-05
+        url: https://arxiv.org/abs/2605.21090
+      - title: "A Deep-Learning-based System for Indoor Active Cleaning"
+        authors:
+          - Yike Yun*, Linjie Hou*, **Zijian Feng***, Wei Jin, Yang Liu, Heng Wang, Ruonan He, Weitao Guo, Bo Han, Baoxing Qin, Jiaxin Li
+        publisher: IROS 2022
+        releaseDate: 2022-10
+        url: https://gaussianopensource.github.io/projects/active_cleaning
+      - title: "MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis"
+        authors:
+          - Jiaxin Li*, **Zijian Feng***, Qi She, Henghui Ding, Changhu Wang, Gim Hee Lee
+        publisher: ICCV 2021
+        releaseDate: 2021-10
+        url: https://arxiv.org/abs/2103.14910
+
+    Awards:
+      - title: 1st place, ICCV 2019 DeepFashion2 Clothes Retrieval Challenge
+        date: 2019-10
+        awarder: ICCV 2019 DeepFashion2 Workshop
+
+    Academic Service:
+      - label: Conference reviewer
+        details: ECCV'22, ICRA'22, CVPR'23, ICCV'23
+      - label: Journal reviewer
+        details: IJCV

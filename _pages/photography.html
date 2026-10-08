@@ -1,0 +1,203 @@
+---
+layout: page
+permalink: /photography/
+title: Photography
+description: Birds and wildlife, mostly around Singapore. Click a photo to view it full size.
+nav: true
+nav_order: 6
+---
+
+{% assign photos = site.data.photos.photos %} {% assign categories = site.data.photos.categories %}
+
+<div class="photo-filters" role="group" aria-label="Filter photos">
+  <button type="button" class="photo-filter active" data-filter="all">All</button>
+  {% for c in categories %}
+  <button type="button" class="photo-filter" data-filter="{{ c[0] }}">{{ c[1] }}</button>
+  {% endfor %}
+</div>
+
+<div class="photo-grid pswp-photo-gallery">
+  {% for p in photos %} {% assign base = p.file | split: '.' | first %} {% capture caption %}<strong>{{ p.title }}</strong>{% if p.species %}
+  <em>({{ p.species }})</em>{% endif %}<br />{{ p.location }} · {{ p.date | date: '%b %Y' }}{% if p.settings %}<br /><small>{{ p.settings }}</small>{%
+  endif %}{% endcapture %}
+  <a
+    class="photo-item"
+    data-category="{{ p.category }}"
+    href="{{ '/assets/img/photos/' | append: p.file | relative_url }}"
+    data-caption="{{ caption | strip_newlines | escape }}"
+    target="_blank"
+  >
+    <picture>
+      {% if site.imagemagick.enabled %}
+      <source
+        type="image/webp"
+        srcset="{{ '/assets/img/photos/' | append: base | append: '-480.webp' | relative_url }} 480w, {{ '/assets/img/photos/' | append: base | append: '-800.webp' | relative_url }} 800w, {{ '/assets/img/photos/' | append: base | append: '-1400.webp' | relative_url }} 1400w"
+        sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+      />
+      {% endif %}
+      <img
+        src="{{ '/assets/img/photos/' | append: p.file | relative_url }}"
+        alt="{{ p.title }}{% if p.species %} ({{ p.species }}){% endif %}, {{ p.location }}"
+        loading="lazy"
+      />
+    </picture>
+    <span class="photo-label">{{ p.title }}</span>
+  </a>
+  {% endfor %}
+</div>
+
+<p class="photo-credit">All photos © {{ site.first_name }} {{ site.last_name }}. All rights reserved.</p>
+
+<style>
+  .photo-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .photo-filter {
+    border: 1px solid var(--global-divider-color);
+    background: transparent;
+    color: var(--global-text-color);
+    border-radius: 999px;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .photo-filter.active {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+  }
+  .photo-grid {
+    column-count: 3;
+    column-gap: 0.75rem;
+  }
+  @media (max-width: 992px) {
+    .photo-grid {
+      column-count: 2;
+    }
+  }
+  @media (max-width: 576px) {
+    .photo-grid {
+      column-count: 1;
+    }
+  }
+  .photo-item {
+    position: relative;
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .photo-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .photo-item:hover img {
+    transform: scale(1.03);
+  }
+  .photo-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5rem 0.75rem 0.5rem;
+    color: #fff;
+    font-size: 0.85rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .photo-item:hover .photo-label,
+  .photo-item:focus .photo-label {
+    opacity: 1;
+  }
+  .photo-item.hidden {
+    display: none;
+  }
+  .photo-credit {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+  .pswp__custom-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    max-width: min(90vw, 640px);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+  }
+  .pswp__custom-caption:empty {
+    display: none;
+  }
+  .pswp__custom-caption strong,
+  .pswp__custom-caption em,
+  .pswp__custom-caption small {
+    color: #fff;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css" crossorigin="anonymous" />
+<script type="module">
+  import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js";
+  import PhotoSwipe from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: ".pswp-photo-gallery",
+    children: "a.photo-item:not(.hidden)",
+    pswpModule: PhotoSwipe,
+    bgOpacity: 1,
+  });
+
+  // Full-size files are capped at 2048px on the long edge (bin/prepare-photos),
+  // so derive their size from the thumbnail's aspect ratio.
+  lightbox.addFilter("itemData", (itemData) => {
+    const img = itemData.element && itemData.element.querySelector("img");
+    if (img && img.naturalWidth) {
+      const scale = 2048 / Math.max(img.naturalWidth, img.naturalHeight);
+      itemData.width = Math.round(img.naturalWidth * scale);
+      itemData.height = Math.round(img.naturalHeight * scale);
+    } else {
+      itemData.width = 2048;
+      itemData.height = 1365;
+    }
+    return itemData;
+  });
+
+  lightbox.on("uiRegister", () => {
+    lightbox.pswp.ui.registerElement({
+      name: "custom-caption",
+      order: 9,
+      isButton: false,
+      appendTo: "root",
+      onInit: (el, pswp) => {
+        pswp.on("change", () => {
+          const a = pswp.currSlide.data.element;
+          el.innerHTML = a ? a.dataset.caption : "";
+        });
+      },
+    });
+  });
+  lightbox.init();
+
+  document.querySelectorAll(".photo-filter").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".photo-filter").forEach((b) => b.classList.toggle("active", b === btn));
+      const f = btn.dataset.filter;
+      document.querySelectorAll(".photo-item").forEach((item) => {
+        item.classList.toggle("hidden", f !== "all" && item.dataset.category !== f);
+      });
+    });
+  });
+</script>

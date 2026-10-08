@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% comment %}
+  Same as the theme's `cv` layout, plus site styles: let locations wrap in the 75px date
+  column (the theme sets `white-space: nowrap`, so longer names overflow), size them to
+  match the date badge, and hide the list markers next to the date badges.
+{% endcomment %}
+<style>
+  .cv p.location {
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+    font-size: 0.75rem; /* match the 12px date badge */
+  }
+  .cv .date-column .iconlocation {
+    font-size: 0.75rem;
+  }
+  /* Drop the list marker beside each entry's date badge; it never lines up with the badge. */
+  .cv .list-group-item {
+    list-style: none;
+  }
+</style>
+
+{% al_folio_cv_render %}

@@ -1,23 +1,12 @@
 ---
-layout: archive
-title: "CV"
+layout: cv-site
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+title: CV
+nav: true
+nav_order: 5
+cv_pdf: /assets/pdf/cv_zijian_feng.pdf # you can also use external links here
+cv_format: rendercv # options: rendercv, jsonresume
+description: Download the PDF with the icon on the right.
+toc:
+  sidebar: left
 ---
-
-{% include base_path %}
-
-Education
-======
-* B.S. in Computing Science, The University of Glasgow, 2016
-* B.S. in Electronics Engineering, Sun Yat-Sen University, 2016
-
-Work experience
-======
-* 11.2020 - present: Research Scientist @ ByteDance, Singapore
-
-* 06.2019 - 11.2020: Research Software Engineer @ ViSenze, Singapore 
-
-* 06.2016 - 06.2019: Senior Research Software Engineer @ Tuputech, Guangzhou, China 

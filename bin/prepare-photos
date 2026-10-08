@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Resize photos for the web and strip location metadata.
+#
+# Usage: bin/prepare-photos <source-dir> [dest-dir]
+#   dest-dir defaults to assets/img/photos
+#
+# - Long edge capped at 2048px (smaller images are left at their size)
+# - JPEG quality 75
+# - All GPS / location tags, maker notes and the embedded thumbnail removed; camera, lens and exposure tags kept
+# - Output names are lowercased (DSC_0854.JPG -> dsc_0854.jpg)
+#
+# Requires macOS `sips` (built in) and `exiftool` (brew install exiftool).
+set -euo pipefail
+
+MAX_EDGE=2048
+QUALITY=75
+
+src="${1:?usage: bin/prepare-photos <source-dir> [dest-dir]}"
+dest="${2:-assets/img/photos}"
+mkdir -p "$dest"
+
+command -v exiftool >/dev/null || { echo "exiftool not found: brew install exiftool" >&2; exit 1; }
+
+shopt -s nullglob nocaseglob
+for f in "$src"/*.{jpg,jpeg,png,heic,tif,tiff}; do
+  name="$(basename "${f%.*}" | tr '[:upper:]' '[:lower:]').jpg"
+  out="$dest/$name"
+  sips -s format jpeg -s formatOptions "$QUALITY" -Z "$MAX_EDGE" "$f" --out "$out" >/dev/null
+  exiftool -q -overwrite_original -gps:all= -xmp:geotag= -xmp-exif:all= -makernotes:all= -ifd1:all= -iptc:city= -iptc:province-state= -iptc:country-primarylocationname= -xmp-photoshop:city= -xmp-photoshop:state= -xmp-photoshop:country= "$out"
+  printf '%-20s %6s KB -> %5s KB\n' "$(basename "$f")" "$(( $(stat -f%z "$f") / 1024 ))" "$(( $(stat -f%z "$out") / 1024 ))"
+done
+
+# Fail loudly if any location data survived.
+if exiftool -q -if '$gpslatitude or $gpslongitude' -p '$filename' "$dest" 2>/dev/null | grep .; then
+  echo "error: GPS data still present in the files above" >&2
+  exit 1
+fi
