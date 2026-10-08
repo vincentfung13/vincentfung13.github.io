@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://vincentfung13.github.io/sitemap.xml
