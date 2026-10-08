@@ -47,3 +47,7 @@ Then add an entry per photo to `_data/photos.yml`. Requires `exiftool` (`brew in
 - `_layouts/cv-site.liquid`: the theme's CV layout plus fixes for location wrapping, location font size and stray
   list markers.
 - `projects/mine/`, `projects/nemi/`: legacy hand-written project pages, served as-is.
+- `assets/js/theme.js`: copy of `al_folio_core`'s theme script with the default changed from `system` to `light`
+  (the only edit is in `determineThemeSetting`). Tracked in `.al-folio-overrides.yml`; after upgrading
+  `al_folio_core`, run `bundle exec al-folio upgrade overrides audit` and re-apply the one-line change to the new
+  upstream file if it changed.
