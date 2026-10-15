@@ -6,6 +6,13 @@ categories:
   wildlife: Wildlife & nature
 
 photos:
+  - file: dsc_0950.jpg
+    category: birds
+    title: Buffy Fish Owl
+    species: Ketupa ketupu
+    location: Pasir Ris Park, Singapore
+    date: 2026-10-10
+    settings: Nikon Z6III · 600mm · f/6.3 · 1/125s · ISO 4500
   - file: dsc_0938.jpg
     category: birds
     title: Asian Openbill
