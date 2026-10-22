@@ -41,3 +41,24 @@ photos:
     location: Sungei Buloh Wetland Reserve, Singapore
     date: 2026-09-05
     settings: Nikon Z6III · 120mm · f/4 · 1/125s · ISO 450
+  - file: dsc_0670.jpg
+    category: birds
+    title: Milky Stork
+    species: Mycteria cinerea
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-09-05
+    settings: Nikon Z6III · 120mm · f/9 · 1/250s · ISO 200
+  - file: dsc_0405.jpg
+    category: birds
+    title: Taiwan Barbet
+    species: Psilopogon nuchalis
+    location: Da'an Forest Park, Taipei, Taiwan
+    date: 2026-08-07
+    settings: Nikon Z6III · 120mm · f/4 · 1/250s · ISO 200
+  - file: img_0740.jpg
+    category: birds
+    title: Great Crested Grebe
+    species: Podiceps cristatus
+    location: Lake Wānaka, New Zealand
+    date: 2024-11-08
+    settings: iPhone 16 Pro · 120mm equiv. · f/2.8 · 1/514s · ISO 50
