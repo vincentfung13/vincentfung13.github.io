@@ -6,6 +6,41 @@ categories:
   wildlife: Wildlife & nature
 
 photos:
+  - file: dsc_1865.jpg
+    category: birds
+    title: Sunda Scops Owl
+    species: Otus lempiji
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-11-07
+    settings: Nikon Z6III · 350mm · f/6 · 1/250s · ISO 11400
+  - file: dsc_1799.jpg
+    category: birds
+    title: Lesser Adjutant
+    species: Leptoptilos javanicus
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-11-07
+    settings: Nikon Z6III · 600mm · f/13 · 1/500s · ISO 200
+  - file: dsc_1772.jpg
+    category: birds
+    title: Common Kingfisher
+    species: Alcedo atthis
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-11-07
+    settings: Nikon Z6III · 600mm · f/6.3 · 1/500s · ISO 250
+  - file: dsc_1759.jpg
+    category: birds
+    title: Collared Kingfisher
+    species: Todiramphus chloris
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-11-07
+    settings: Nikon Z6III · 600mm · f/8 · 1/500s · ISO 280
+  - file: dsc_1710.jpg
+    category: birds
+    title: Painted Stork
+    species: Mycteria leucocephala
+    location: Sungei Buloh Wetland Reserve, Singapore
+    date: 2026-11-07
+    settings: Nikon Z6III · 600mm · f/8 · 1/500s · ISO 250
   - file: dsc_0950.jpg
     category: birds
     title: Buffy Fish Owl
