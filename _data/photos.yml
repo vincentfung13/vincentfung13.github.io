@@ -48,13 +48,6 @@ photos:
     location: Sungei Buloh Wetland Reserve, Singapore
     date: 2026-11-07
     settings: Nikon Z6III · 600mm · f/13 · 1/500s · ISO 200
-  - file: dsc_1772.jpg
-    category: birds
-    title: Common Kingfisher
-    species: Alcedo atthis
-    location: Sungei Buloh Wetland Reserve, Singapore
-    date: 2026-11-07
-    settings: Nikon Z6III · 600mm · f/6.3 · 1/500s · ISO 250
   - file: dsc_1759.jpg
     category: birds
     title: Collared Kingfisher
@@ -62,13 +55,6 @@ photos:
     location: Sungei Buloh Wetland Reserve, Singapore
     date: 2026-11-07
     settings: Nikon Z6III · 600mm · f/8 · 1/500s · ISO 280
-  - file: dsc_1710.jpg
-    category: birds
-    title: Painted Stork
-    species: Mycteria leucocephala
-    location: Sungei Buloh Wetland Reserve, Singapore
-    date: 2026-11-07
-    settings: Nikon Z6III · 600mm · f/8 · 1/500s · ISO 250
   - file: dsc_0950.jpg
     category: birds
     title: Buffy Fish Owl
@@ -76,13 +62,6 @@ photos:
     location: Pasir Ris Park, Singapore
     date: 2026-10-10
     settings: Nikon Z6III · 600mm · f/6.3 · 1/125s · ISO 4500
-  - file: dsc_0938.jpg
-    category: birds
-    title: Asian Openbill
-    species: Anastomus oscitans
-    location: Punggol Park, Singapore
-    date: 2026-10-04
-    settings: Nikon Z6III · 600mm · f/8 · 1/250s · ISO 220
   - file: dsc_0879.jpg
     category: birds
     title: Tiger Shrike
@@ -90,13 +69,6 @@ photos:
     location: Punggol Park, Singapore
     date: 2026-10-04
     settings: Nikon Z6III · 600mm · f/8 · 1/250s · ISO 360
-  - file: dsc_0854.jpg
-    category: birds
-    title: White-breasted Waterhen
-    species: Amaurornis phoenicurus
-    location: Punggol Park, Singapore
-    date: 2026-10-04
-    settings: Nikon Z6III · 520mm · f/6.3 · 1/250s · ISO 1250
   - file: dsc_0780.jpg
     category: wildlife
     title: Malayan Water Monitor
@@ -118,10 +90,3 @@ photos:
     location: Da'an Forest Park, Taipei, Taiwan
     date: 2026-08-07
     settings: Nikon Z6III · 120mm · f/4 · 1/250s · ISO 200
-  - file: img_0740.jpg
-    category: birds
-    title: Great Crested Grebe
-    species: Podiceps cristatus
-    location: Lake Wānaka, New Zealand
-    date: 2024-11-08
-    settings: iPhone 16 Pro · 120mm equiv. · f/2.8 · 1/514s · ISO 50
